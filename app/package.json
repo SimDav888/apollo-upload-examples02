@@ -1,0 +1,62 @@
+{
+  "name": "apollo-upload-examples-app",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Jayden Seric",
+    "email": "me@jaydenseric.com",
+    "url": "https://jaydenseric.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaydenseric/apollo-upload-examples.git",
+    "directory": "app"
+  },
+  "homepage": "https://github.com/jaydenseric/apollo-upload-examples#readme",
+  "bugs": "https://github.com/jaydenseric/apollo-upload-examples/issues",
+  "funding": "https://github.com/sponsors/jaydenseric",
+  "engines": {
+    "node": "^18.15.0 || >=20.4.0",
+    "npm": ">=7"
+  },
+  "browserslist": "Node 18.15 - 19 and Node < 19, Node >= 20.4, > 0.5%, not OperaMini all, not IE > 0, not dead",
+  "dependencies": {
+    "@apollo/client": "^3.8.6",
+    "apollo-upload-client": "^18.0.0",
+    "device-agnostic-ui": "~10.0.0",
+    "graphql": "^16.8.1",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@types/eslint": "^8.44.6",
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "babel-plugin-graphql-tag": "^3.3.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recommended": "^13.0.0",
+    "typescript": "^5.2.2"
+  },
+  "overrides": {
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "eslint": "eslint .",
+    "stylelint": "stylelint '**/*.css'",
+    "prettier": "prettier -c .",
+    "types": "tsc -p jsconfig.json",
+    "test": "npm run eslint && npm run stylelint && npm run prettier && npm run types"
+  }
+}
